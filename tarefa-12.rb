@@ -1,13 +1,15 @@
-jogadas = 0
+
+def torreHanoi(discos)
+    puts "Com #{discos} discos o jogo será encerrado com #{(2**discos)-1} jogadas."
+end
+
 puts "Qual o numero de discos na Torre de Hanói?" 
-discos = gets.chomp.to_i
-    if discos == 0  
-        puts "Entrada INVÁLIDA"
+entrada = gets.chomp.to_i
 
-    else 
-        jogadas = 2**(discos)-1
-    end    
+if entrada == 0  
+    puts "Entrada INVÁLIDA"
 
+else 
+    torreHanoi(entrada)
 
-
-puts "Com #{discos} discos o jogo será encerrado com #{jogadas} jogadas."
+end
