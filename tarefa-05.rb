@@ -16,4 +16,4 @@ array1.each_with_index do
     end         
 end
 
-puts soma/2
+puts "#{Float(soma)/2}"
